@@ -47,7 +47,7 @@ class _MyTextFormFieldState extends State<MyTextFormField> {
           setState(() {});
         },
         validator: (value) {
-          if (value!.length == 0) {
+          if (value!.isEmpty) {
             return "Enter a character";
           }
         },

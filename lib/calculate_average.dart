@@ -1,7 +1,7 @@
 import 'package:dynamic_calculate_average/constants.dart';
 import 'package:dynamic_calculate_average/credits.dart';
 import 'package:dynamic_calculate_average/data_helper.dart';
-import 'package:dynamic_calculate_average/lesson_model.dart';
+
 import 'package:dynamic_calculate_average/letters.dart';
 import 'package:dynamic_calculate_average/list_of_lessons.dart';
 import 'package:dynamic_calculate_average/my_textform_field.dart';
@@ -137,93 +137,5 @@ class _CalculateAveragePageState extends State<CalculateAveragePage> {
         ));
   }
 
-  // Widget _buildTextFormField() {
-  //   return Padding(
-  //     padding: const EdgeInsets.all(8.0),
-  //     child: TextFormField(
-  //       // textAlignVertical: TextAlignVertical.center,
-  //       autovalidateMode: AutovalidateMode.onUserInteraction,
-  //       textAlign: TextAlign.center,
-  //       onSaved: (value) {
-  //         name = value.toString();
-  //         letterValue = selectedValue;
-  //         creditValue = selectedCredit;
-  //         var lesson = Lesson(
-  //             name: name, letterValue: letterValue, creditValue: creditValue);
-
-  //         DataHelper.allAddedLessons.add(lesson);
-  //         // print("Added:  ${DataHelper.allAddedLessons}");
-  //         average = DataHelper.calculateAverage();
-
-  //         setState(() {});
-  //       },
-  //       validator: (value) {
-  //         if (value!.length == 0) {
-  //           return "Lütfen bir ders giriniz";
-  //         }
-  //       },
-  //       decoration: InputDecoration(
-  //         // contentPadding:  EdgeInsets.all(5),
-  //         hintText: "Ders Adı Giriniz",
-  //         border: OutlineInputBorder(
-  //             borderRadius: Constants.borderRadius,
-  //             borderSide: BorderSide.none),
-  //         filled: true,
-  //         fillColor: Constants.primaryColor.shade100.withOpacity(0.3),
-  //       ),
-  //     ),
-  //   );
-  // }
-
-  // Widget _buildLetters() {
-  //   return Expanded(
-  //     child: Padding(
-  //       padding: const EdgeInsets.all(8.0),
-  //       child: Container(
-  //         alignment: Alignment.center,
-  //         padding: Constants.dropDownPadding,
-  //         decoration: BoxDecoration(
-  //           color: Constants.primaryColor.shade100.withOpacity(0.3),
-  //           borderRadius: Constants.borderRadius,
-  //         ),
-  //         child: DropdownButtonHideUnderline(
-  //           child: DropdownButton<double>(
-  //               iconEnabledColor: Constants.primaryColor.shade200,
-  //               value: selectedValue,
-  //               items: DataHelper.allLettersOfLessons,
-  //               onChanged: (value) {
-  //                 selectedValue = value!;
-  //                 setState(() {});
-  //               }),
-  //         ),
-  //       ),
-  //     ),
-  //   );
-  // }
-
-  // Widget _buildCredits() {
-  //   return Expanded(
-  //     child: Padding(
-  //       padding: const EdgeInsets.all(8.0),
-  //       child: Container(
-  //         alignment: Alignment.center,
-  //         padding: Constants.dropDownPadding,
-  //         decoration: BoxDecoration(
-  //           color: Constants.primaryColor.shade100.withOpacity(0.3),
-  //           borderRadius: Constants.borderRadius,
-  //         ),
-  //         child: DropdownButtonHideUnderline(
-  //           child: DropdownButton<double>(
-  //               iconEnabledColor: Constants.primaryColor.shade200,
-  //               value: selectedCredit,
-  //               items: DataHelper.creditsOfAllLessons,
-  //               onChanged: (value) {
-  //                 selectedCredit = value!;
-  //                 setState(() {});
-  //               }),
-  //         ),
-  //       ),
-  //     ),
-  //   );
-  // }
+ 
 }
